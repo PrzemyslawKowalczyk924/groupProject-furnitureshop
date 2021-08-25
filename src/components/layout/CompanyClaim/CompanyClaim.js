@@ -19,7 +19,7 @@ const CompanyClaim = ({ cartAmount }) => (
         </div>
         <div className={`col-6 col-md-4 text-center ${styles.image}`}>
           <a href='/#'>
-            <img src='/images/logo.png' alt='Bazar' />
+            <img src='./images/logo.png' alt='Bazar' />
           </a>
         </div>
         <div className={`col-6 col-md-4 text-right ${styles.cart}`}>
