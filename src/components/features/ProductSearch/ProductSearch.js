@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchInput from '../SearchInput/SearchInput';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -65,12 +66,7 @@ const ProductSearch = () => (
       </ul>
       <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
     </div>
-    <div className={styles.searchField}>
-      <input placeholder='Search products...' type='text' />
-      <a href='/search'>
-        <FontAwesomeIcon className={styles.icon} icon={faSearch} />
-      </a>
-    </div>
+    <SearchInput />
   </form>
 );
 
