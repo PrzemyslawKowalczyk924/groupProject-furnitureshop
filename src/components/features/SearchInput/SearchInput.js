@@ -8,7 +8,7 @@ const SearchInput = () => (
   <div className={styles.searchField}>
     <input placeholder='Search products...' type='text' />
     <a href='/search'>
-      <FontAwesomeIcon className={styles.icon} icon={faSearch} />
+      <FontAwesomeIcon /* className={styles.icon} */ icon={faSearch} />
     </a>
   </div>
 );
