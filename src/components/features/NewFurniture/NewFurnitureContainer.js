@@ -10,10 +10,11 @@ import {
   getViewOn,
   changeQuickView,
 } from '../../../redux/productsRedux';
+import { getFilteredProducts } from '../../../redux/searchStringRedux';
 
 const mapStateToProps = state => ({
   categories: getAll(state),
-  products: getNew(state),
+  products: getFilteredProducts(state),
   getCompared: getCompared(state),
   getViewOn: getViewOn(state),
   changeCompare: changeCompare(state),

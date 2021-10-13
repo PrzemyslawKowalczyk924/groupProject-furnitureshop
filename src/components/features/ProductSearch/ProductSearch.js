@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchInput from '../SearchInput/SearchInput';
+import SearchInput from '../SearchInput/SearchInputContainer';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

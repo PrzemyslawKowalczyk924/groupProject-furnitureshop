@@ -4,12 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import styles from './SearchInput.module.scss';
 
-const SearchInput = props => {
-  const { research } = props;
+const SearchInput = ({searchValue, changeSearchString}) => {
 
   return (
     <div className={styles.searchField}>
-      <input placeholder='Search products...' type='text' />
+      <input placeholder='Search products...' type='text' value={searchValue} onChange={(event) => changeSearchString(event.target.value)} />
       <a href='/search'>
         <FontAwesomeIcon /* className={styles.icon} */ icon={faSearch} />
       </a>

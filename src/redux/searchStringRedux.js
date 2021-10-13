@@ -1,5 +1,11 @@
 // selectors
 export const getSearchString = (state) => state.searchString; 
+export const getFilteredProducts = (state) => {
+  return state.products.filter((product) => {
+    debugger
+    return product.name.includes(state.searchString)
+  })
+}; 
 
 // action name creator
 const reducerName = 'searchString';
